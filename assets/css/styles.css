@@ -4,3 +4,28 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
+header {
+  height: 10vh;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work {
+  margin: 20px;
+}
+
+.card {
+  flex: 1 0 200px;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.card-main {
+  flex: 2 1 200px;
+}
