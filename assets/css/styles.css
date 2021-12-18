@@ -16,17 +16,12 @@ header {
   height: 10vh;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 h1 {
   color: #31343d;
   font-size: 40px;
   background-color: var(--teal);
   line-height: 6vh;
+  text-align: center;
 }
 
 nav ul {
@@ -65,8 +60,29 @@ h2 {
   background: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding: 3vh;
+}
+
+hr {
+  border: 1px solid var(--navy);
+  margin-bottom: 10px;
+}
+
+.about-me {
+  margin-bottom: 3vh;
+}
+
+article {
+  font-size: 0.75em;
+}
+
 .work {
-  margin-top: 10px;
+  margin-bottom: 3vh;
 }
 
 h3 {
@@ -85,6 +101,16 @@ h3 {
   flex: 2 1 200px;
 }
 
+.contact-link {
+  text-align: center;
+}
+
+article a {
+  background-color: var(--background);
+  color: var(--navy);
+  font-weight: bold;
+  padding: 4px;
+}
 
 @media screen and (min-width: 321px) {
 
