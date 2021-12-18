@@ -1,8 +1,15 @@
+:root {
+  --background: #eeeef7;
+  --navy: #445877;
+  --teal: #92ccce;
+}
+
 * {
-  background-color: #ededf6;
-  color: #445876;
+  background-color: var(--background);
+  color: var(--navy);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  width: 100%;
 }
 
 header {
@@ -11,11 +18,30 @@ header {
 
 main {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
+h1 {
+  color: #31343d;
+  font-size: 40px;
+  background-color: var(--teal);
+  line-height: 6vh;
+  margin-bottom: 5px;
+}
+
+nav {
+  color: var(--teal);
+  background-color: #31343d;
+  text-decoration: underline;
+}
+
 .work {
-  margin: 20px;
+  margin-top: 10px;
+}
+
+h3 {
+
 }
 
 .card {
@@ -28,4 +54,10 @@ main {
 
 .card-main {
   flex: 2 1 200px;
+}
+
+
+@media screen and (min-width: 321px) {
+
+  
 }
