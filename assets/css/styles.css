@@ -32,15 +32,16 @@ header {
 
 h1 {
   color: #31343d;
-  font-size: 40px;
+  font-size: 6vw;
   background-color: var(--teal);
   text-align: left;
   width: max-content;
 }
 
 nav ul {
+  font-size: 1.5em;
   color: var(--teal);
-  text-align: center;
+  text-align: right;
 }
 
 nav ul li {
@@ -50,24 +51,26 @@ nav ul li {
 
 a {
   color: var(--teal);
+  text-decoration: none;
+  border-bottom: 3px solid var(--teal);
 }
 
 /* Showcase with image */
 .showcase {
-  height: 25vh;
+  height: 10vh;
   background-image: url(/assets/images/showcase.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  position: relative;
 }
 
 h2 {
-  width: auto;
   font-size: 25px;
   text-align: center;
   margin: 0 auto;
-  padding-top: 30%;
-  background: none;
+  position: absolute;
+  bottom: 5%;
 }
 
 /* Main page content */
@@ -81,7 +84,7 @@ main {
 }
 
 h3 {
-  font-size: 45px;
+  font-size: 5vw;
   text-align: right;
   padding-right: 8px;
 }
@@ -100,11 +103,11 @@ h3 {
 }
 
 .about-me {
-  /* height: ; */
+  /* Adjust height of the  row */
 }
 
 .contact {
-  /* height: ; */
+  /* Adjust height of the  row */
 }
 
 /* About Me */
@@ -117,6 +120,7 @@ article {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: inherit;
 }
 
 .card {
@@ -134,8 +138,9 @@ article {
 }
 
 .main-card {
-  flex: 2 1 200px;
+  flex: 2 1 400px;
   min-width: 90%;
+  height: 25vh;
 }
 
 .card-text {
@@ -156,39 +161,32 @@ article a {
   color: var(--navy);
   font-weight: bold;
   padding: 4px;
+  border-bottom: 3px solid var(--navy);
 }
 
 /* Media screens */
-@media screen and (max-width: 768px) {
-  h2 {
-    padding-top: 24%;
-    margin: 0;
-    text-align: end;
+@media screen and (max-width: 425px) {
+  .headings {
+    width: 100%;
+    border-right: none;
+    border-bottom: 3px solid var(--navy);
   }
-  
+
+  .content {
+    width: 100%;
+    padding: 0 0 2vh 0;
+  }
+
+  h3 {
+    text-align: left;
+    font-size: 2em;
+  }
+
+  article {
+    font-size: 1em;
+  }
 }
 
-@media screen and (max-width: 1440px) {
-  header {
-    background-color: #31343d;
-  }
-
-  nav ul {
-    text-align: right;
-  }
-
-  h1 {
-    text-align: left;
-    background-color: var(--teal);
-    width: max-content;
-  }
-  .showcase {
-    height: 10vh;
-  }
-
-  h2 {
-    padding-top: 5%;
-    text-align: center;
-    font-weight: bold;
-  }
+@media screen and (max-width: 768px) {
+  
 }
