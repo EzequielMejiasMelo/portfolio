@@ -1,3 +1,4 @@
+/* Universal properties for the page */
 :root {
   --background: #eeeef7;
   --navy: #445877;
@@ -15,27 +16,30 @@ html {
   background-color: var(--background);
 }
 
+/* Header */
 header {
   height: 10vh;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #31343d;
 }
 
 .head {
-  flex: 1 0 inherit;
-  min-width: 50%;
+  flex: 1 0 200px;
 }
 
 h1 {
   color: #31343d;
   font-size: 40px;
   background-color: var(--teal);
-  text-align: center;
+  text-align: left;
+  width: max-content;
 }
 
 nav ul {
   color: var(--teal);
-  background-color: #31343d;
   text-align: center;
 }
 
@@ -48,6 +52,7 @@ a {
   color: var(--teal);
 }
 
+/* Showcase with image */
 .showcase {
   height: 25vh;
   background-image: url(/assets/images/showcase.jpg);
@@ -65,32 +70,28 @@ h2 {
   background: none;
 }
 
+/* Main page content */
 main {
   margin-top: 0;
   padding: 3vh;
-}
-
-hr {
-  border: 1px solid var(--navy);
-  margin-bottom: 10px;
-}
-
-.about-me {
-  margin-bottom: 3vh;
-}
-
-article {
-  font-size: 0.75em;
-}
-
-.work {
-  margin-bottom: 3vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 h3 {
   font-size: 25px;
+  flex: 1 1 200px
 }
 
+/* About Me */
+article {
+  font-size: 0.75em;
+}
+
+/* Work Cards */
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -125,6 +126,7 @@ h3 {
   padding: 5px;
 }
 
+/* Contact Me */
 .contact-link {
   text-align: center;
 }
@@ -135,6 +137,7 @@ article a {
   padding: 4px;
 }
 
+/* Media screens */
 @media screen and (max-width: 768px) {
   h2 {
     padding-top: 24%;
