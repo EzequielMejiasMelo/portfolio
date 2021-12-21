@@ -32,15 +32,14 @@ header {
 
 h1 {
   color: #31343d;
-  font-size: 6vw;
+  font-size: 4vw;
   background-color: var(--teal);
   text-align: left;
   width: max-content;
 }
 
 nav ul {
-  font-size: 1.5em;
-  color: var(--teal);
+  font-size: 2vw;
   text-align: right;
 }
 
@@ -57,7 +56,7 @@ a {
 
 /* Showcase with image */
 .showcase {
-  height: 10vh;
+  height: 20vh;
   background-image: url(/assets/images/showcase.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,7 +83,7 @@ main {
 }
 
 h3 {
-  font-size: 5vw;
+  font-size: 3vw;
   text-align: right;
   padding-right: 8px;
 }
@@ -103,11 +102,11 @@ h3 {
 }
 
 .about-me {
-  /* Adjust height of the  row */
+  /* Adjust height of the row */
 }
 
 .contact {
-  /* Adjust height of the  row */
+  /* Adjust height of the row */
 }
 
 /* About Me */
@@ -134,7 +133,6 @@ article {
   border: 2px solid var(--teal);
   height: 90%;
   position: relative;
-  margin-right: px;
 }
 
 .main-card {
@@ -164,6 +162,18 @@ article a {
   border-bottom: 3px solid var(--navy);
 }
 
+a:hover {
+  color: #eeeef7;
+}
+
+article a:hover {
+  color: var(--teal);
+}
+
+.card:hover {
+  opacity: 0.75;
+}
+
 /* Media screens */
 @media screen and (max-width: 425px) {
   .headings {
@@ -183,7 +193,11 @@ article a {
   }
 
   article {
-    font-size: 1em;
+    font-size: 3vw;
+  }
+
+  .main-card {
+    height: 11vh;
   }
 }
 
