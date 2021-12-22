@@ -57,7 +57,7 @@ a {
 /* Showcase with image */
 .showcase {
   height: 20vh;
-  background-image: url(/assets/images/showcase.jpg);
+  background-image: url("../images/showcase.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -65,11 +65,14 @@ a {
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 2vw;
   text-align: center;
   margin: 0 auto;
+  background-color: var(--teal);
+  width: max-content;
   position: absolute;
   bottom: 5%;
+  left: 40vw;
 }
 
 /* Main page content */
