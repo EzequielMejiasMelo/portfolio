@@ -149,8 +149,12 @@ article {
   color: var(--navy);
   width: auto;
   position: absolute;
-  top: 40%;
+  top: 30%;
   padding: 5px;
+}
+
+.main-text {
+  top: 45%;
 }
 
 /* Contact Me */
@@ -208,6 +212,10 @@ article a:hover {
 
   .main-card {
     height: 11vh;
+  }
+
+  .card-text {
+    top: 40%;
   }
 
   article a {
