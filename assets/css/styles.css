@@ -163,8 +163,10 @@ article a {
   font-weight: bold;
   padding: 4px;
   border-bottom: 3px solid var(--navy);
+  font-size: 2vw;
 }
 
+/* Pseudo Classes */
 a:hover {
   color: #eeeef7;
 }
@@ -185,6 +187,11 @@ article a:hover {
     border-bottom: 3px solid var(--navy);
   }
 
+  h2 {
+    font-size: 5vw;
+    left: 25%;
+  }
+
   .content {
     width: 100%;
     padding: 0 0 2vh 0;
@@ -202,7 +209,15 @@ article a:hover {
   .main-card {
     height: 11vh;
   }
+
+  article a {
+    font-size: inherit;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 3.5vw;
+    left: 35%;
+  }
 }
