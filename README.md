@@ -29,8 +29,8 @@ This is my current portfolio implementing simply HTML and CSS. Be sure to check 
 
 Please contact me if you have any questions. Thanks!
 
-[Email](ezequiel.mejiasmelo@gmail.com)
+<ezequiel.mejiasmelo@gmail.com>
 
 [Github](https://github.com/EzequielMejiasMelo)
 
-[LinkedIn](www.linkedin.com/in/ezequiel-mejias-melo-605180169)
+[LinkedIn](https://www.linkedin.com/in/ezequiel-mejias-melo-605180169/)
