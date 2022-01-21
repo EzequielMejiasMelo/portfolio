@@ -4,104 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/05eafdd4dc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
     <!-- Header with navbar -->
     <header>
-      <div class="head">
-        <h1>Ezequiel Mejias</h1>
-      </div>
-      <div class="head">
-        <nav>
-          <ul>
-            <li><a href="#aboutme">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact-me">Contact Me</a></li>
-            <li><a href="#">Resume</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ezequiel Mejias</a>
+          <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarItems">
+            <ul class="navbar-nav me-auto justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact-me">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Showcase with Subtite -->
     <section class="showcase">
-      <h2>Software Developer</h2>
+      <div>
+        <h2>Ezequiel Mejias</h2>
+        <p>Software developer interested in algorithms and learning how things work.</p>
+      </div>
     </section>
 
     <main>
       <!-- About Me  -->
-      <h3 class="headings about-me">About Me</h3>
-      <article class="content about-me">
+      <h3 class="headings" id="about-me">About Me</h3>
+      <article class="content">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-          pellentesque pellentesque purus, eu eleifend ipsum ultrices sit amet.
-          Pellentesque ultrices, arcu at auctor laoreet, nulla justo tempor
-          risus, eu efficitur libero nulla vitae felis.
+          Hey, I'm Ezequiel. I've been interested in technology for as long as I can remember. Currently I am a enrolled in UCF's Full Stack Development program.
+          
         </p>
         <br />
         <p>
-          Sed sapien nulla, consectetur ut dolor id, auctor gravida justo.
-          Phasellus tincidunt cursus justo, a auctor orci lacinia a. Proin et
-          massa malesuada nisl posuere mollis. Proin tincidunt lectus ac neque
-          lobortis porta. Vestibulum non ipsum vel est feugiat ultrices.
+          I pride myself on my communication skills and my ability to collaberate even with diverse teams.
+          I've been working with some of my classmates and close friends to make the sometimes challenging process
+          of becoming an engineer easier.
         </p>
+        <br />
+        <h4>Future Ventures (Teach/Develop myself)</h4>
+        <ul>
+          <li>Scalable distributed systems(infrastructure, networks, microservices)</li>
+          <li>Machine Learning</li>
+          <li>Security</li>
+          <li>Program to reaveal lottery numbers</li>
+        </ul>
       </article>
       <!-- Work with cards -->
-      <h3 class="headings work">Work</h3>
+      <h3 class="headings work" id="work">Work</h3>
       <div class="work-cards content work">
-        <div class="card-container">
-          <section class="card main-card">
-            <article class="card-content">
-              <div class="card-text main-text">
-                <h4>Surf Report</h4>
-                <p>MERN Stack</p>
-              </div>
-            </article>
-          </section>
-          <section class="card">
-            <article class="card-content">
-              <div class="card-text">
-                <h4>LED Wall</h4>
-                <p>Node/IoT</p>
-              </div>
-            </article>
-          </section>
-          <section class="card">
-            <article class="card-content">
-              <div class="card-text">
-                <h4>Calculator</h4>
-                <p>React/Javascript/CSS</p>
-              </div>
-            </article>
-          </section>
-          <section class="card">
-            <article class="card-content">
-              <div class="card-text">
-                <h4>Pastel Puzzles</h4>
-                <p>MERN Stack</p>
-              </div>
-            </article>
-          </section>
-          <section class="card">
-            <article class="card-content">
-              <div class="card-text">
-                <h4>Run Buddy</h4>
-                <p>HTML/CSS</p>
-              </div>
-            </article>
-          </section>
-        </div>
+        
       </div>
       <!-- Contact Me -->
-      <h3 class="headings contact">Contact Me</h3>
+      <h3 class="headings contact" id="contact-me">Contact Me</h3>
       <article class="contact-link content contact">
-        <a href="#">111-111-1111</a>
-        <a href="#">blahblah@gmail.com</a>
-        <a href="#">Github</a>
-        <a href="#">LinkedIn</a>
+        <a href="mailto: ezequiel.mejiasmelo@gmail.com">ezequiel.mejiasmelo@gmail.com</a>
+        <a href="https://github.com/EzequielMejiasMelo">Github</a>
+        <a href="https://www.linkedin.com/in/ezequiel-mejias-melo">LinkedIn</a>
+        <a href="#">Resume</a>
       </article>
     </main>
+    <!-- Boostrap Dependency -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

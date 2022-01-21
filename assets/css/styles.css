@@ -3,13 +3,14 @@
   --background: #eeeef7;
   --navy: #445877;
   --teal: #92ccce;
+  --darker: #31343d;
 }
 
 * {
   color: var(--navy);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  width: 100%;
+  /* width: 100%; */
 }
 
 html {
@@ -18,12 +19,7 @@ html {
 
 /* Header */
 header {
-  height: 10vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #31343d;
+  background-color: var(--darker);
 }
 
 .head {
@@ -31,7 +27,7 @@ header {
 }
 
 h1 {
-  color: #31343d;
+  color: var(--darker);
   font-size: 4vw;
   background-color: var(--teal);
   text-align: left;
@@ -56,7 +52,7 @@ a {
 
 /* Showcase with image */
 .showcase {
-  height: 20vh;
+  height: 98vh;
   background-image: url("../images/showcase.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,15 +60,22 @@ a {
   position: relative;
 }
 
-h2 {
-  font-size: 2vw;
-  text-align: center;
-  margin: 0 auto;
-  background-color: var(--teal);
-  width: max-content;
+.showcase div {
   position: absolute;
-  bottom: 5%;
-  left: 40vw;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.showcase p{
+  color: white;
+  font-size: 1.75rem;
+}
+
+.showcase h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
 }
 
 /* Main page content */
@@ -104,45 +107,25 @@ h3 {
   align-self: center;
 }
 
-.about-me {
-  /* Adjust height of the row */
-}
-
-.contact {
-  /* Adjust height of the row */
-}
-
 /* About Me */
 article {
   font-size: 1.25em;
 }
 
 /* Work Cards */
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  height: inherit;
+
+.main-card {
+  max-width: 90%;
 }
 
-.card {
-  flex: 1 0 200px;
-  height: 11vh;
-  min-width: 50%;
-}
-
-.card-content {
+.work-card {
   background-color: #8494a4;
   border: 2px solid var(--teal);
   height: 90%;
-  position: relative;
+  max-width: 50%;
+
 }
 
-.main-card {
-  flex: 2 1 400px;
-  min-width: 90%;
-  height: 25vh;
-}
 
 .card-text {
   background-color: var(--teal);
@@ -153,9 +136,6 @@ article {
   padding: 5px;
 }
 
-.main-text {
-  top: 45%;
-}
 
 /* Contact Me */
 .contact-link {
@@ -224,8 +204,4 @@ article a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  h2 {
-    font-size: 3.5vw;
-    left: 35%;
-  }
 }
