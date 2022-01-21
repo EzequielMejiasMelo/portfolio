@@ -12,13 +12,13 @@
     <!-- Header with navbar -->
     <header>
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid ms-4">
           <a class="navbar-brand" href="#">Ezequiel Mejias</a>
-          <button class="navbar-toggler justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler justify-content-end me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarItems">
-            <ul class="navbar-nav me-auto justify-content-end">
+            <ul class="navbar-nav ms-auto me-4">
               <li class="nav-item">
                 <a class="nav-link" href="#about-me">About Me</a>
               </li>
@@ -40,15 +40,15 @@
     <!-- Showcase with Subtite -->
     <section class="showcase">
       <div>
-        <h2>Ezequiel Mejias</h2>
+        <h1>Ezequiel Mejias</h1>
         <p>Software developer interested in algorithms and learning how things work.</p>
       </div>
     </section>
 
     <main>
       <!-- About Me  -->
-      <h3 class="headings" id="about-me">About Me</h3>
-      <article class="content">
+      <h2 class="headings" id="about-me">About Me</h2>
+      <article class="content mb-4">
         <p>
           Hey, I'm Ezequiel. I've been interested in technology for as long as I can remember. Currently I am a enrolled in UCF's Full Stack Development program.
           
@@ -69,12 +69,48 @@
         </ul>
       </article>
       <!-- Work with cards -->
-      <h3 class="headings work" id="work">Work</h3>
-      <div class="work-cards content work">
-        
+      <h2 class="headings work" id="work">Work</h2>
+      <div class="work-cards content work mb-4">
+        <div class="row">
+          <div class="col pb-3">
+            <div class="card main-card">
+              <img src="./assets/images/a-la-carte.JPG" class="card-img-top image-card" alt="Image of webpage with search bar">
+              <div class="card-body">
+                <h3 class="card-title text-white">Wolves a La Carte</h3>
+                <p class="card-text text-white">Web app to help users find recipes and find approx Kroger cost</p>
+                <a href="https://github.com/WRuback/Wolves-a-la-carte" class="btn btn-primary">Github</a>
+                <a href="https://wruback.github.io/Wolves-a-la-carte/" class="btn btn-success">App</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./assets/images/day-planner.gif" class="card-img-top image-card" alt="Image of webpage with search bar">
+              <div class="card-body">
+                <h3 class="card-title text-white">Day Planner</h3>
+                <p class="card-text text-white">A 9-5 day planner using jQuery and Moment.js</p>
+                <a href="https://github.com/EzequielMejiasMelo/day-planner" class="btn btn-primary">Github</a>
+                <a href="https://ezequielmejiasmelo.github.io/day-planner/" class="btn btn-success">App</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <img src="./assets/images/weather-dashboard.gif" class="card-img-top image-card" alt="Image of webpage with search bar">
+              <div class="card-body">
+                <h3 class="card-title text-white">Weather Dashboard</h3>
+                <p class="card-text text-white">A weather dashobard implemented using the OpenWeather API</p>
+                <a href="https://github.com/EzequielMejiasMelo/weather-dashboard" class="btn btn-primary">Github</a>
+                <a href="https://ezequielmejiasmelo.github.io/weather-dashboard/" class="btn btn-success">App</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Contact Me -->
-      <h3 class="headings contact" id="contact-me">Contact Me</h3>
+      <h2 class="headings contact" id="contact-me">Contact Me</h2>
       <article class="contact-link content contact">
         <a href="mailto: ezequiel.mejiasmelo@gmail.com">ezequiel.mejiasmelo@gmail.com</a>
         <a href="https://github.com/EzequielMejiasMelo">Github</a>

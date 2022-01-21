@@ -20,39 +20,12 @@ html {
 /* Header */
 header {
   background-color: var(--darker);
-}
-
-.head {
-  flex: 1 0 200px;
-}
-
-h1 {
-  color: var(--darker);
-  font-size: 4vw;
-  background-color: var(--teal);
-  text-align: left;
-  width: max-content;
-}
-
-nav ul {
-  font-size: 2vw;
-  text-align: right;
-}
-
-nav ul li {
-  display: inline;
-  padding: 4px;
-}
-
-a {
-  color: var(--teal);
-  text-decoration: none;
-  border-bottom: 3px solid var(--teal);
+  height: auto;
 }
 
 /* Showcase with image */
 .showcase {
-  height: 98vh;
+  height: 96vh;
   background-image: url("../images/showcase.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +45,7 @@ a {
   font-size: 1.75rem;
 }
 
-.showcase h2 {
+.showcase h1 {
   font-size: 2.5rem;
   color: white;
   margin-bottom: 0.5rem;
@@ -88,7 +61,7 @@ main {
   height: 100vh;
 }
 
-h3 {
+h2 {
   font-size: 3vw;
   text-align: right;
   padding-right: 8px;
@@ -113,29 +86,9 @@ article {
 }
 
 /* Work Cards */
-
-.main-card {
-  max-width: 90%;
+.card {
+  background-color: var(--darker);
 }
-
-.work-card {
-  background-color: #8494a4;
-  border: 2px solid var(--teal);
-  height: 90%;
-  max-width: 50%;
-
-}
-
-
-.card-text {
-  background-color: var(--teal);
-  color: var(--navy);
-  width: auto;
-  position: absolute;
-  top: 30%;
-  padding: 5px;
-}
-
 
 /* Contact Me */
 .contact-link {
@@ -146,7 +99,6 @@ article a {
   color: var(--navy);
   font-weight: bold;
   padding: 4px;
-  border-bottom: 3px solid var(--navy);
   font-size: 2vw;
 }
 
@@ -164,44 +116,6 @@ article a:hover {
 }
 
 /* Media screens */
-@media screen and (max-width: 425px) {
-  .headings {
-    width: 100%;
-    border-right: none;
-    border-bottom: 3px solid var(--navy);
-  }
-
-  h2 {
-    font-size: 5vw;
-    left: 25%;
-  }
-
-  .content {
-    width: 100%;
-    padding: 0 0 2vh 0;
-  }
-
-  h3 {
-    text-align: left;
-    font-size: 2em;
-  }
-
-  article {
-    font-size: 3vw;
-  }
-
-  .main-card {
-    height: 11vh;
-  }
-
-  .card-text {
-    top: 40%;
-  }
-
-  article a {
-    font-size: inherit;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 600px){
+  
 }
