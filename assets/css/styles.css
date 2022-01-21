@@ -58,7 +58,6 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100vh;
 }
 
 h2 {
@@ -117,5 +116,24 @@ article a:hover {
 
 /* Media screens */
 @media only screen and (max-width: 600px){
-  
+  .headings {
+    width: 100%;
+    border-right: none;
+    border-bottom: 3px solid var(--navy);
+  }
+
+  h2 {
+    text-align: start;
+    font-size: 2rem;
+  }
+
+  .content {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 361px) {
+  #last-card {
+    padding-top: 1rem;
+  }
 }
