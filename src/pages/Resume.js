@@ -4,7 +4,7 @@ const Resume = () => {
     return (
         <div>
             <h3>Resume</h3>
-            <p>Download my <a href="../../assets/Ezequiel Mejias Resume.pdf">resume</a></p>
+            <p>Download my <a href="../../public/Ezequiel Mejias Resume.pdf">resume</a></p>
 
             <h4>Front-end Technologies</h4>
             <ul>

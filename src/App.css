@@ -1,0 +1,136 @@
+/* Universal properties for the page */
+:root {
+    --background: #eeeef7;
+    --navy: #445877;
+    --teal: #92ccce;
+    --darker: #31343d;
+  }
+  
+  * {
+    color: var(--navy);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  
+  html {
+    background-color: var(--background);
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--darker);
+    height: auto;
+  }
+  
+  /* Showcase with image */
+  .showcase {
+    height: 96vh;
+    background-image: url("../public/images/showcase.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+  }
+  
+  .showcase div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .showcase p{
+    color: white;
+    font-size: 1.75rem;
+  }
+  
+  .showcase h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Main page content */
+
+  h2 {
+    font-size: 3vw;
+    text-align: right;
+    padding-right: 8px;
+  }
+  
+  .headings {
+    border-bottom: 3px solid var(--navy);
+  }
+  
+  .content {
+    align-self: center;
+  }
+  
+  /* About Me */
+  article {
+    font-size: 1.25em;
+  }
+  
+  /* Work Cards */
+  .card {
+    background-color: var(--darker);
+  }
+  
+  /* Contact Me */
+  .contact-link {
+    text-align: center;
+  }
+  
+  article a {
+    color: var(--navy);
+    font-weight: bold;
+    padding: 4px;
+    font-size: 2vw;
+  }
+  
+  /* Pseudo Classes */
+  a:hover {
+    color: #eeeef7;
+  }
+  
+  article a:hover {
+    color: var(--teal);
+  }
+  
+  .card:hover {
+    opacity: 0.75;
+  }
+  
+  /* Media screens */
+  @media only screen and (max-width: 600px){
+    .headings {
+      width: 100%;
+      border-right: none;
+      border-bottom: 3px solid var(--navy);
+    }
+  
+    h2 {
+      text-align: start;
+      font-size: 2rem;
+    }
+  
+    .content {
+      width: auto;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .showcase h1 {
+      font-size: 2rem;
+    }
+  
+    .showcase p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 361px) {
+    #last-card {
+      padding-top: 1rem;
+    }
+  }
