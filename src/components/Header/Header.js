@@ -24,8 +24,7 @@ const Header = () => {
                             <Link className="nav-link text-white" href="/contact-me">Contact Me</Link>
                         </li>
                         <li className="nav-item">
-                            {/* Change this route later */}
-                            <Link className="nav-link text-white" href="/" target="_blank">Resume</Link>
+                            <Link className="nav-link text-white" href="/resume" target="_blank">Resume</Link>
                         </li>
                     </ul>
                 </div>
