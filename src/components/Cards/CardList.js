@@ -9,7 +9,7 @@ const CardList = () => {
                 <Card card={card} />
             ))}
         </div>
-    )
+    );
 };
 
 export default CardList;

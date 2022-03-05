@@ -11,7 +11,7 @@ const Card = ({card}) => {
                 <a href={card.site} target="_blank" className="btn btn-success" rel="noreferrer">App</a>
             </div>
         </div>
-    )
+    );
 };
 
 export default Card;
