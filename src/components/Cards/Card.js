@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({card}) => {
     return (
         <div className="card w-100 h-100">
-            <img className="card-img-top image-card" alt="Screenshot of the application" src={card.img_path} ></img>
+            <img className="card-img-top image-card" alt="Screenshot of the application" src={card.img} ></img>
             <div className="card-body">
                 <h3 className="card-title">{card.title}</h3>
                 <p className="card-text">{card.description}</p>
