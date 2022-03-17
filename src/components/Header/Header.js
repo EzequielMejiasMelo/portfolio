@@ -1,36 +1,49 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bootstrap from "bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
-    return (
-        <header>
-            <nav className="container-fluid ms-4">
-                <a className="navbar-brand text-white" href="/">Ezequiel Mejias</a>
-                <button className="navbar-toggler justify-content-end me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarItems" aria-controls="navbarItems" aria-expanded="false" aria-label="Toggle navigation">
-                    <FontAwesomeIcon icon={faBars} />
-                </button>
-                <div className="collapse navbar-collapse" id="navbarItems">
-                    <ul className="navbar-nav ms-auto me-4" id="nav-list">
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/about-me">About Me</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/work">Work</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/contact-me">Contact Me</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link text-white" to="/resume">Resume</Link>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    );
+  const path = window.location.pathname;
+
+  return (
+    <header>
+      <nav className="container-fluid ms-4 fixed-top">
+        <ul className="nav mb-0 top-nav" id="nav-list">
+          <li className="nav-brand">
+            <Link
+              className={path === "/" ? "nav-link text-white" : "nav-link dark"}
+              to="/"
+            >
+              Ezequiel Mejias
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className={path === "/" ? "nav-link text-white" : "nav-link dark"}
+              to="/software"
+            >
+              Software
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className={path === "/" ? "nav-link text-white" : "nav-link dark"}
+              to="/resume"
+            >
+              Resume
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              className={path === "/" ? "nav-link text-white" : "nav-link dark"}
+              to="/contact"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 };
 
 export default Header;
