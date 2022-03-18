@@ -13,7 +13,7 @@ const Footer = () => {
         <nav className="container-fluid ms-4">
           <ul className="nav text-white" id="end-nav">
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/">
+              <Link className="nav-link text-white" to="/portfolio">
                 Home
               </Link>
             </li>

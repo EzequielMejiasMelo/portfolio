@@ -10,7 +10,7 @@ const Header = () => {
         <ul className="nav mb-0 top-nav" id="nav-list">
           <li className="nav-brand">
             <Link
-              className={path === "/" ? "nav-link text-white" : "nav-link dark"}
+              className={path === ("/portfolio" || "/") ? "nav-link text-white" : "nav-link dark"}
               to="/"
             >
               Ezequiel Mejias
@@ -18,7 +18,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
-              className={path === "/" ? "nav-link text-white" : "nav-link dark"}
+              className={path === ("/portfolio" || "/") ? "nav-link text-white" : "nav-link dark"}
               to="/software"
             >
               Software
@@ -26,7 +26,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
-              className={path === "/" ? "nav-link text-white" : "nav-link dark"}
+              className={path === ("/portfolio" || "/") ? "nav-link text-white" : "nav-link dark"}
               to="/resume"
             >
               Resume
@@ -34,7 +34,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
-              className={path === "/" ? "nav-link text-white" : "nav-link dark"}
+              className={path === ("/portfolio" || "/") ? "nav-link text-white" : "nav-link dark"}
               to="/contact"
             >
               Contact
